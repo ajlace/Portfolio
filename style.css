@@ -26,7 +26,11 @@
   --button-padding:0.5em;
   --button-width:40%;
   --button-space:20%;
+  --button-round-width:3em;
+  
   --button-border-radius:0.4em;
+  
+  
   --button-main-color:#e6e6e6;
   --button-hover-color:#d9d9d9;
   --button-font-color:#1a1a1a;
@@ -235,7 +239,7 @@ body {
 	width:45%;
 	float:left;
 	margin:2.5%;
-	padding-bottom:var(--main-padding);
+	padding-bottom:var(--projects-padding);
 	
 	border-radius:2%;
 }
