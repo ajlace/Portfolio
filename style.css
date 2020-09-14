@@ -236,12 +236,18 @@ body {
 
 .project-object {
 	background:var(--project-object-background);
+
 	width:45%;
 	float:left;
 	margin:2.5%;
 	padding-bottom:var(--projects-padding);
 	
 	border-radius:2%;
+}
+
+.project-object a {
+	color:var(--main-font-color);
+	text-decoration:none;
 }
 
 .project-object .text-wrapper {
