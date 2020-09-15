@@ -1,5 +1,5 @@
 :root {
-  --main-padding: 3em;
+  --main-padding: 2em;
   --main-wrapper-width:70%;
   --main-wrapper-half-height:6em;
   --main-wrapper-height:25em;
@@ -121,9 +121,18 @@ body {
 	background-color:var(--main-background-color);
 	padding-bottom:var(--main-margin);
 }
+
 /*==============================================
  * MAIN MEDIA
  *============================================*/
+
+.text {
+	width:var(--main-text-width);
+}
+
+.media {
+	width:var(--main-media-width);
+}
 
 .media img {
 	width:var(--main-media-img-width-height);	
@@ -151,6 +160,14 @@ body {
 	margin-top: 1em;
 	margin-bottom: 1em;
 	width: 5em;
+}
+
+.phone-title{
+	display:none !important;
+}
+
+.regular-title {
+	display:block;
 }
 
 /*==============================================
@@ -360,14 +377,12 @@ body {
 }
 
 .right .text {
-	width:var(--main-text-width);
 	float:right;
 	margin-left:var( --main-margin-left-right);
 }
 
 .right .media {
-	width:var(--main-media-width);
-	float:right;
+	float:left;
 	text-align:left;
 }
 
@@ -385,15 +400,13 @@ body {
 }
 
 .left .text {
-	width:var(--main-text-width);
 	float:left;
 	text-align:justify;
 	margin-right:var( --main-margin-left-right);
 }
 
 .left .media {
-	width:var(--main-media-width);
-	float:left;
+	float:right;
 	text-align:right;
 }
 
@@ -425,6 +438,94 @@ body {
 	display:block;
 }
 
+
+@media only screen and (max-width:600px) {
+  .text, .wrapper {
+	width:100% !important;
+  }
+  
+  .media {
+	width:90%;
+  }
+	
+}
+
+
+@media only screen and (max-width:1000px) {
+  /* For mobile phones: */
+  .text {
+	width:80%;
+	float:none !important;
+	margin:auto !important;
+  }
+  
+  .media {
+	width:60%;
+	float:none !important;
+	margin:auto !important;
+	margin-bottom:var(--main-margin) !important;
+  }
+  
+  .phone-title{
+	display:block !important;
+  }
+  
+  .regular-title {
+	display:none !important;
+  }
+  
+  .regular-title .title::after {
+	width:0em;
+	display:none;
+  }
+  
+  .title, .media {
+	text-align:center !important;
+  }
+  
+  .special-wrapper, .project-object {
+	width:90%;
+	float:none;
+  }
+  
+  .button-right {
+	float:none !important;
+  }
+  
+  .button-wrapper {
+	text-align:center;
+  }
+  
+  .button {
+	width:80% !important;
+	float:none !important;
+	margin:auto !important;
+	margin-bottom:var(--main-margin) !important;
+  }
+  
+  .project-object {
+	margin-bottom:var(--main-margin) !important;
+  }
+  
+  .right, .left, .center {
+	width:100%;
+	float:none;
+  }
+  
+  .divider {
+	width:0%;
+  }
+  
+  #header-body {
+	  width:100%;
+	  padding-left:0em !important;
+	  padding-right:0em !important;
+  }
+  
+  #header {
+	  text-align:center !important;
+  }
+}
 
  
  
